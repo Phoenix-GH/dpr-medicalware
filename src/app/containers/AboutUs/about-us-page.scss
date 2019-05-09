@@ -1,0 +1,357 @@
+@import '../../style/app.scss';
+@import '../../style/mixins.scss';
+
+.cw-about-us-page {
+  .page-outer {
+    &.page-about-us {
+      section {
+        &.banner {
+          &.about-us-banner {
+            background: url(../../assets/images/banner-about-us-bg.jpg) no-repeat;
+          }
+        }
+
+        &.what-we-do {
+          padding: 100px 0 0 0;
+          background: url(../../assets/images/bg-what-we-do.jpg) no-repeat right top;
+          min-height: 790px;
+
+          h2 {
+            font-size: 32px;
+            color: $primary-color;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          p {
+            text-align: center;
+            margin-bottom: 80px;
+            font-size: 16px;
+            letter-spacing: -1px;
+          }
+
+          .white-box {
+            background: #FFF;
+            padding: 40px 30px;
+            -webkit-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+            -moz-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+            box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+          }
+
+          ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            span {
+              margin-right: 10px;
+            }
+          }
+        }
+
+        &.how-different {
+          padding: 0 0 100px 0;
+
+          h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: $primary-color;
+          }
+
+          p {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 40px;
+          }
+
+          .light-box {
+            text-align: center;
+            font-size: 20px;
+            padding: 60px 20px;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+
+            img {
+              display: table;
+              margin: 0 auto 30px auto;
+            }
+
+            h3 {
+              a {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        &.process {
+          background: url(../../assets/images/bg-process.jpg) no-repeat;
+          background-position: right top;
+          padding-bottom: 350px;
+          padding-top: 150px;
+          margin-top: -100px;
+
+          h2 {
+            font-size: 32px;
+            text-align: center;
+            color: $primary-color;
+            margin-bottom: 30px;
+          }
+
+          .wiw-box {
+            &.bx2 {
+              padding-top: 80px;
+            }
+
+            &.bx3 {
+              padding-top: 160px;
+            }
+          }
+        }
+
+        .light-box {
+          height: 390px;
+        }
+
+        .cw-enrollnow-btn.button2 {
+          margin-top: 300px;
+          text-transform: uppercase;
+
+          &:hover {
+            background: #FFF;
+            color: $primary-color;
+          }
+        }
+
+        @media all and (min-width: 1px) {
+          &.banner {
+            &.about-us-banner {
+              background: #003b79;
+            }
+
+            .banner-content {
+              padding-top: 20px;
+            }
+          }
+
+          &.what-we-do {
+            background: #fff;
+            padding: 60px 0 270px 0;
+            height: auto;
+
+            .white-box {
+              height: auto;
+
+              ul {
+                max-width: 992px;
+
+                li {
+                  &:before {
+                    display: none;
+                  }
+
+                  font-size: 14px;
+                }
+              }
+            }
+
+            p {
+              margin-bottom: 40px;
+            }
+          }
+
+          .cw-enrollnow-btn.button2 {
+            margin: 20px auto 0 auto;
+            font-size: 12px;
+            width: auto;
+            height: auto;
+          }
+
+          &.process {
+            background: #FFF;
+
+            .wiw-box {
+              &.bx2 {
+                padding-top: 0;
+              }
+
+              &.bx3 {
+                padding-top: 0;
+              }
+
+              .ct {
+                padding: 40px 50px 20px 50px;
+
+                h4 {
+                  font-size: 20px;
+                }
+              }
+
+              .squares {
+                position: static;
+
+                .price {
+                  float: none;
+                }
+
+                .time {
+                  float: none;
+                  margin-left: 0;
+                  margin-top: 10px;
+                  margin-bottom: 20px;
+                }
+              }
+
+              > h3 {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        @media all and (min-width: 307px) {
+        }
+
+        @media all and (min-width: 400px) {
+          .cw-enrollnow-btn.button2 {
+            padding: 20px 40px;
+            margin: 40px auto 0 auto;
+          }
+        }
+
+        @media all and (min-width: 992px) {
+          &.what-we-do {
+            background: url(../../assets/images/bg-what-we-do.jpg) no-repeat right top;
+            padding: 100px 0 0 0;
+            background: url(../../assets/images/bg-what-we-do.jpg) no-repeat 215px top;
+            min-height: 790px;
+
+            p {
+              max-width: 380px;
+              letter-spacing: -1px;
+              margin: 0 auto 35px auto;
+            }
+
+            .white-box ul li {
+              font-size: 15px;
+              letter-spacing: -1px;
+            }
+          }
+
+          &.banner {
+            &.about-us-banner {
+              height: 641px;
+              background: url(../../assets/images/banner-about-us-bg.jpg) no-repeat;
+              background-position: center top;
+            }
+          }
+
+          &.process {
+            background: url(../../assets/images/bg-process.jpg) no-repeat;
+            background-position: 0 top;
+            padding-bottom: 350px;
+            padding-top: 150px;
+            margin-top: -100px;
+
+            .wiw-box {
+              &.bx2 {
+                padding-top: 80px;
+              }
+
+              &.bx3 {
+                padding-top: 160px;
+              }
+
+              .ct {
+                padding: 40px 50px 200px 50px;
+
+                h4 {
+                  font-size: 24px;
+                }
+              }
+
+              .squares {
+                position: absolute;
+
+                .price {
+                  float: left;
+                }
+
+                .time {
+                  float: left;
+                  margin-left: 10px;
+                  margin-top: 0;
+                  margin-bottom: 0;
+                }
+              }
+
+              > h3 {
+                font-size: 24px;
+              }
+            }
+          }
+
+          .cw-enrollnow-btn.button2 {
+            padding: 20px 40px;
+            margin: 300px 0 0 0;
+            font-size:22px;
+          }
+        }
+
+        @media all and (min-width: 1200px) {
+          &.what-we-do {
+            padding: 100px 0 0 0;
+            background: url(../../assets/images/bg-what-we-do.jpg) no-repeat right top;
+            min-height: 790px;
+
+            p {
+              max-width: 380px;
+              letter-spacing: -1px;
+              margin: 0 auto 35px auto;
+            }
+
+            .white-box ul li {
+              font-size: 15px;
+              letter-spacing: -1px;
+            }
+          }
+
+          &.process {
+            background: url(../../assets/images/bg-process.jpg) no-repeat;
+            background-position: 0 top;
+            padding-bottom: 350px;
+            padding-top: 150px;
+            margin-top: -100px;
+          }
+
+          &.how-different {
+            .light-box {
+              font-size: 20px;
+            }
+          }
+        }
+
+        @media all and (min-width: 1400px) {
+          &.what-we-do {
+            p {
+              max-width: none;
+              letter-spacing: -1px;
+            }
+
+            .white-box ul li {
+              font-size: 16px;
+              letter-spacing: 0;
+            }
+          }
+
+          &.process {
+            background: url(../../assets/images/bg-process.jpg) no-repeat;
+            background-position: right top;
+            padding-bottom: 350px;
+            padding-top: 150px;
+            margin-top: -100px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,261 @@
+@import '../../../../style/app.scss';
+@import '../../../../style/mixins.scss';
+
+.box-number1 {
+  background: #FFF;
+  margin-bottom: 55px;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(138,138,138,1);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(138,138,138,1);
+  box-shadow: 0px 0px 50px 0px rgba(138,138,138,1);
+
+  h3 {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    color: #FFF;
+    padding-left: 225px;
+    font-size: 24px;
+
+    span {
+      display: block;
+      width: 112px;
+      height: 112px;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+      border-radius: 56px;
+      position: absolute;
+      left: 60px;
+      top: -20px;
+      padding: 16px 0 0 16px;
+
+      strong {
+        display: block;
+        font-size: 50px;
+        text-align: center;
+        background: #FFF;
+        width: 80px;
+        height: 80px;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+        border-radius:40px;
+        line-height: 75px;
+      }
+    }
+  }
+
+  .bx1 {
+    width: 225px;
+    float: left;
+    padding: 50px 0;
+
+    h4 {
+      font-size: 18px;
+      padding: 0 0 0 0;
+      color: $secondary-color;
+      text-align: center;
+    }
+  }
+
+  .bx2 {
+    width: 570px;
+    float: left;
+    padding: 50px 0;
+
+    ul {
+      li {
+        margin-bottom: 10px;
+
+        span {
+          display: block;
+          width: 20px;
+          height: 14px;
+          float: left;
+          background: url(../../../../assets/images/bullet2.gif) no-repeat;
+          margin-top: 3px;
+          margin-right: 20px;
+        }
+
+        strong {
+          margin-left: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &.bn1 {
+    h3 {
+      background: #076fde;
+
+      span {
+        background: #2083ec;
+
+        strong {
+          color: #2083ec;
+        }
+      }
+    }
+  }
+
+  &.bn2 {
+    h3 {
+      background: #014b99;
+
+      span {
+        background: #0a56a6;
+
+        strong {
+          color: #0a56a6;
+        }
+      }
+    }
+  }
+
+  &.bn3 {
+    h3 {
+      background: #062659;
+
+      span {
+        background: #0c2c60;
+
+        strong {
+          color:#0c2c60;
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 1px) {
+    .bx1 {
+      width: auto;
+      float: none;
+      padding: 20px 0;
+      display: table;
+      margin: 0 auto;
+
+      h4 {
+        width: auto;
+      }
+    }
+
+    .bx2 {
+      width: auto;
+      float: none;
+      padding: 20px 0;
+      display: table;
+      margin: 0 auto;
+
+      ul li {
+        padding:0 10px;
+
+        strong {
+          font-size: 14px;
+        }
+
+        span {
+          margin-right: 0;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 33px;
+      height: 170px;
+      padding-top: 100px;
+      text-align: center;
+      padding-left: 8px;
+
+      span {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media all and (min-width: 475px) {
+    h3 {
+      height: 70px;
+      padding-top: 0;
+      text-align: left;
+      padding-left: 225px;
+
+      span {
+        left: 60px;
+        margin: 0;
+        right: auto;
+      }
+    }
+
+    .bx2 ul li {
+      padding: 0;
+
+      span {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  @media all and (min-width: 670px) {
+    h3 {
+      line-height: 70px;
+    }
+  }
+
+  @media all and (min-width: 992px) {
+    .bx1 {
+      width: 164px;
+      float: left;
+      padding: 50px 0;
+      margin: 0;
+
+      h4 {
+        width: 100px;
+        line-height: 24px;
+        margin: auto;
+      }
+    }
+
+    .bx2 {
+      width: 391px;
+      float: left;
+      padding: 50px 0;
+      margin: 0;
+
+      ul li strong {
+        font-size:12px;
+      }
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+  }
+
+  @media all and (min-width: 1200px) {
+    h3 {
+      font-size: 23px;
+    }
+
+    .bx1 {
+      width: 225px;
+    }
+
+    .bx2 {
+      width: 410px;
+
+      ul li strong {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media all and (min-width: 1400px) {
+    h3 {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export const locationsApiUrl = 'https://cyclodev-1a-2.azurewebsites.net/api/HttpTriggerJS1?code=wReRQCiQ3QM395rjkVjzk9khsrwgRqyfDEd7GtAAxRmVKNy31YRmfQ==';

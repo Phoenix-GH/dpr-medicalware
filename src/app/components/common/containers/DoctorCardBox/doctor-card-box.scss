@@ -1,0 +1,148 @@
+@import '../../../../style/app.scss';
+@import '../../../../style/mixins.scss';
+
+.doctor-card-container {
+    .our-doctors-item {
+      position: relative;
+      -webkit-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+      -moz-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+      box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+
+      .img {
+        background: #FFF;
+        padding: 14px 14px 0 14px;
+        position: absolute;
+        top: -80px;
+        left: -14px;
+        -webkit-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+        -moz-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+        box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+      }
+
+      .hd {
+        background: $primary-color;
+        color: #FFF;
+        padding: 20px 20px 20px 270px;
+
+        h3 {
+          font-size: 28px;
+          margin-bottom: 5px;
+        }
+
+        span {
+          display: block;
+          height: 3px;
+          width: 40px;
+          background: $secondary-color;
+          margin-bottom: 5px;
+        }
+
+        strong {
+          font-size: 13px;
+          font-style: italic;
+          font-weight:400;
+        }
+      }
+
+      .ct {
+        background: #FFF;
+        padding: 100px 50px 50px 50px;
+        min-height: 616px;
+
+        p {
+          margin-bottom: 20px;
+          font-size: 16px;
+          line-height: 27px;
+        }
+      }
+
+    @media all and (min-width: 1px) {
+        margin-bottom: 120px;
+
+        .img {
+          top: 0px;
+          position: static;
+
+          img {
+            max-width: 170px;
+            margin: 0 auto 0 auto;
+            display: table;
+            padding-bottom: 20px;
+          }
+        }
+
+        .hd {
+          padding: 20px 0 20px 0;
+          text-align: center;
+
+          h3 {
+            font-size: 22px;
+          }
+
+          span {
+            margin: 0 auto 5px auto;
+          }
+        }
+
+        .ct {
+          padding: 30px;
+        }
+      }
+
+      @media all and (min-width: 670px) {
+        .img {
+          top: -70px;
+          position: absolute;
+
+          img {
+            max-width: none;
+          }
+        }
+
+        .hd {
+          padding: 20px 20px 20px 270px;
+          text-align: left;
+
+          span {
+            margin: 0 0 5px 0;
+          }
+        }
+
+        .ct {
+          padding: 100px 50px 50px 50px;
+        }
+      }
+
+      @media all and (min-width: 992px) {
+        margin-bottom: 0;
+    
+        .ct {
+          min-height: 835px;
+        }
+
+        .img {
+          top: -40px;
+        }
+      }
+
+      @media all and (min-width: 1200px) {
+        .ct {
+          min-height: 700px;
+        }
+
+        .img {
+          top: -80px;
+        }
+      }
+
+      @media all and (min-width: 1400px) {
+        .hd h3 {
+          font-size: 28px;
+        }
+
+        .ct {
+          min-height: 616px;
+        }
+      }
+  }
+}

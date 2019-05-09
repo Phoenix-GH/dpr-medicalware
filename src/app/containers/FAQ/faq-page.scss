@@ -1,0 +1,541 @@
+@import '../../style/app.scss';
+@import '../../style/mixins.scss';
+
+.cw-faqPage {
+  .page-outer {
+    section {
+      &.banner {
+        &.faq-banner {
+          min-height: 600px;
+          background: url(../../assets/images/faq-banner-bg.jpg) no-repeat right top #013d7d;
+          background-size: cover;
+
+          .banner-content {
+            padding-top: 0;
+          }
+
+          .banner-txt {
+            margin-bottom: 0;
+
+            ul {
+              margin-left: 80px;
+              padding: 20px 0;
+            }
+
+            p {
+              font-size: 18px;
+            }
+
+            li {
+              strong {
+                max-width: 320px;
+              }
+            }
+          }
+        }
+      }
+
+      &.section-faq {
+        padding:60px 0 300px 0;
+        /* IE10+ */
+        background-image: -ms-linear-gradient(top, #FFFFFF 0%, #FFFFFF 522px, #F2F9FF 50%, #f2f9ff 100%);
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 522px, #F2F9FF 50%, #f2f9ff 100%);
+        /* Opera */
+        background-image: -o-linear-gradient(top, #FFFFFF 0%, #FFFFFF 522px, #F2F9FF 50%, #f2f9ff 100%);
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(522px, #FFFFFF), color-stop(522px, #F2F9FF), color-stop(100, #f2f9ff));
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 522px, #F2F9FF 522px, #f2f9ff 100%);
+        /* W3C Markup */
+        background-image: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 522px, #F2F9FF 522px, #f2f9ff 100%);
+
+        h2 {
+          text-align: center;
+          font-size: 32px;
+          color: $primary-color;
+          margin-bottom: 40px;
+        }
+
+        #tabs {
+          ul {
+            li {
+              margin: 0 1% 85px 0;
+              display: table;
+              float: left;
+              width: 24%;
+              position: relative;
+
+              a {
+                display: block;
+                height: 236px;
+                background: $light-color;
+                padding-top: 50px;
+                color: $primary-color;
+                text-align: center;
+                font-weight: 700;
+                font-size: 18px;
+
+                img {
+                  display: table;
+                  margin: 0 auto 20px auto;
+                }
+              }
+
+              .triangle {
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.3s linear;
+
+                &:after {
+                  top: 100%;
+                  left: 50%;
+                  border: solid transparent;
+                  content: " ";
+                  height: 0;
+                  width: 0;
+                  position: absolute;
+                  pointer-events: none;
+                  border-color: rgba(204, 0, 0, 0);
+                  border-top-color: $secondary-color;
+                  border-width: 20px;
+                  margin-left: -20px;
+                }
+              }
+
+              .ui-tabs-active {
+                a {
+                  background: $secondary-color;
+                  color: #FFF;
+                  -webkit-box-shadow: 0px 0px 26px 0px rgba(43,82,126,0.6);
+                  -moz-box-shadow: 0px 0px 26px 0px rgba(43,82,126,0.6);
+                  box-shadow: 0px 0px 26px 0px rgba(43,82,126,0.6);
+                }
+
+                .triangle {
+                  visibility: visible;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+
+          .ui-accordion-header-icon {
+            display: table;
+            float: right;
+            padding-right: 40px;
+            line-height: 106px;
+
+            &:before {
+              font-family: 'FontAwesome';
+              color: $secondary-color;
+              font-size: 30px;
+              content: "\f107";
+            }
+          }
+
+          .ui-accordion-header-active {
+            .ui-accordion-header-icon:before {
+              font-family: 'FontAwesome';
+              color: $secondary-color;
+              font-size: 30px;
+              content: "\f106";
+            }
+          }
+
+          #tabs-1 {
+            #accordion1 {
+              h3 {
+                font-size: 24px;
+                color: $primary-color;
+                background: #FFF;
+                line-height: 110px;
+                padding: 0 0 0 50px;
+                margin-bottom: 30px;
+                cursor: pointer;
+                -webkit-box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+                -moz-box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+                box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+
+                &.ui-tabs-active {
+                  margin-bottom: 0;
+                }
+
+                &.ui-accordion-header-active {
+                  background: $light-color5;
+                  margin-bottom: 0;
+                }
+              }
+
+              div {
+                padding: 60px 50px;
+                background: #FFF;
+                margin-bottom: 30px;
+                -webkit-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+                -moz-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+                box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+
+                p {
+                  margin-bottom: 20px;
+                  font-size: 16px;
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+
+          #tabs-2 {
+            #accordion2 {
+              h3 {
+                font-size: 24px;
+                color: $primary-color;
+                background: #FFF;
+                line-height: 110px;
+                padding: 0 0 0 50px;
+                margin-bottom: 30px;
+                cursor: pointer;
+                -webkit-box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+                -moz-box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+                box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+
+                &.ui-tabs-active {
+                  margin-bottom: 0;
+                }
+
+                &.ui-accordion-header-active {
+                  background: $light-color5;
+                  margin-bottom: 0;
+                }
+              }
+
+              div {
+                padding: 60px 50px;
+                background: #FFF;
+                margin-bottom:30px;
+                -webkit-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+                -moz-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+                box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+
+                p {
+                  margin-bottom: 20px;
+                  font-size:16px;
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+
+          #tabs-3 {
+            #accordion3 {
+              h3 {
+                font-size: 24px;
+                color: $primary-color;
+                background: #FFF;
+                line-height: 110px;
+                padding: 0 0 0 50px;
+                margin-bottom: 30px;
+                cursor: pointer;
+                -webkit-box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+                -moz-box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+                box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+
+                &.ui-tabs-active {
+                  margin-bottom: 0;
+                }
+
+                &.ui-accordion-header-active {
+                  background: $light-color5;
+                  margin-bottom: 0;
+                }
+              }
+
+              div {
+                padding: 60px 50px;
+                background: #FFF;
+                margin-bottom: 30px;
+                -webkit-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+                -moz-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+                box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+
+                p {
+                  margin-bottom: 20px;
+                  font-size: 16px;
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+
+          #tabs-4 {
+            #accordion4 {
+              h3 {
+                font-size: 24px;
+                color: $primary-color;
+                background: #FFF;
+                line-height: 110px;
+                padding: 0 0 0 50px;
+                margin-bottom: 30px;
+                cursor: pointer;
+                -webkit-box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+                -moz-box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+                box-shadow: 0px 6px 26px 0px rgba(43,82,126,0.3);
+
+                &.ui-tabs-active {
+                  margin-bottom: 0;
+                }
+
+                &.ui-accordion-header-active {
+                  background: $light-color5;
+                  margin-bottom: 0;
+                }
+              }
+
+              div {
+                padding: 60px 50px;
+                background: #FFF;
+                margin-bottom: 30px;
+                -webkit-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+                -moz-box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+                box-shadow: 0px 9px 26px 0px rgba(43,82,126,0.3);
+
+                p {
+                  margin-bottom: 20px;
+                  font-size: 16px;
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ui-state-focus {outline:none;}
+    .ui-accordion-header {outline:none;}
+
+    @media all and (min-width: 1px) {
+      section {
+        &.banner {
+          &.faq-banner {
+            background: #013d7d;
+
+            .banner-txt {
+              text-align:center;
+
+              ul {
+                margin: 0 auto 0 auto;
+                display: table;
+              }
+
+              h2 {
+                padding-top: 20px;
+              }
+            }
+          }
+        }
+
+        &.section-faq {
+          #tabs {
+            ul {
+              li {
+                margin: 0 0 85px 0;
+                width: 25%;
+
+                a {
+                  height: 165px;
+                  padding-top: 20px;
+                  font-size: 10px;
+                }
+              }
+            }
+
+            #tabs-1 #accordion1 {
+              div {
+                padding: 30px 20px;
+              }
+
+              h3 {
+                font-size: 14px;
+                line-height: 34px;
+                padding: 12px 0 12px 20px;
+                min-height: 110px;
+              }
+            }
+
+            #tabs-2 #accordion2 h3 {
+              font-size: 14px;
+              line-height: 34px;
+              padding: 12px 0 12px 20px;
+              min-height: 110px;
+            }
+
+            #tabs-3 #accordion3 h3 {
+              font-size: 14px;
+              line-height: 34px;
+              padding: 12px 0 12px 20px;
+              min-height: 110px;
+            }
+
+            #tabs-4 #accordion4 h3 {
+              font-size: 14px;
+              line-height: 34px;
+              padding: 12px 0 12px 20px;
+              min-height: 110px;
+            }
+
+            .ui-accordion-header-icon {
+              line-height: 79px;
+            }
+          }
+        }
+      }
+    }
+
+    @media all and (min-width: 475px) {
+      section {
+        &.section-faq {
+          #tabs {
+            ul {
+              li {
+                margin: 0 1% 85px 0;
+                width: 24%;
+
+                a {
+                  height: 200px;
+                  padding-top: 20px;
+                  font-size: 14px;
+                }
+              }
+            }
+
+            #tabs-1 #accordion1 h3 {
+              font-size: 18px;
+              line-height: 45px;
+              padding: 10px 0 0 20px;
+              min-height: 110px;
+            }
+
+            #tabs-2 #accordion2 h3 {
+              font-size: 18px;
+              line-height: 45px;
+              padding: 10px 0 0 20px;
+              min-height: 110px;
+            }
+
+            #tabs-3 #accordion3 h3 {
+              font-size: 18px;
+              line-height: 45px;
+              padding: 10px 0 0 20px;
+              min-height: 110px;
+            }
+
+            #tabs-4 #accordion4 h3 {
+              font-size: 18px;
+              line-height: 45px;
+              padding: 10px 0 0 20px;
+              min-height: 110px;
+            }
+
+            .ui-accordion-header-icon {
+              display: table;
+              float: right;
+              padding-right: 20px;
+              line-height: 106px;
+              margin-top: -13px;
+            }
+          }
+        }
+      }
+    }
+
+    @media all and (min-width: 670px) {
+
+    }
+
+    @media all and (min-width: 992px) {
+      section {
+        &.banner {
+          &.faq-banner {
+            background: url(../../assets/images/faq-banner-bg.jpg) no-repeat right top #013d7d;
+            background-size: cover;
+
+            .banner-txt {
+              text-align: left;
+
+              ul {
+                margin: 0 0 0 80px;
+              }
+            }
+          }
+
+          .banner-txt h2 {
+            padding-top: 0;
+          }
+        }
+
+        &.section-faq #tabs {
+          ul {
+            li {
+              margin: 0 1% 85px 0;
+              width: 24%;
+
+              a {
+                height: 236px;
+                padding-top: 50px;
+                font-size: 18px;
+              }
+            }
+          }
+
+          #tabs-1 #accordion1 {
+            div {
+              padding: 60px 50px;
+            }
+
+            h3 {
+              font-size: 24px;
+              line-height: 110px;
+              padding: 0 0 0 50px;
+            }
+          }
+
+          #tabs-2 #accordion2 h3 {
+            font-size: 24px;
+            line-height: 110px;
+            padding: 0 0 0 50px;
+          }
+
+          #tabs-3 #accordion3 h3 {
+            font-size: 24px;
+            line-height: 110px;
+            padding: 0 0 0 50px;
+          }
+
+          #tabs-4 #accordion4 h3 {
+            font-size: 24px;
+            line-height: 110px;
+            padding: 0 0 0 50px;
+          }
+
+          .ui-accordion-header-icon {
+            display: table;
+            float: right;
+            padding-right: 40px;
+            line-height: 106px;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    @media all and (min-width: 1200px) {
+
+    }
+
+    @media all and (min-width: 1400px) {
+      section.banner.faq-banner {
+        background-size: contain;
+      }
+    }
+  }
+}

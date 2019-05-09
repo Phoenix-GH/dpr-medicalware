@@ -1,0 +1,145 @@
+@import '../../style/app.scss';
+@import '../../style/mixins.scss';
+
+.cw-doctorsPage {
+  .page-outer {
+
+    section {
+      &.banner {
+        &.our-doctors-banner {
+          min-height: 600px;
+          background:url(../../assets/images/our-doctors-banner-bg.jpg) no-repeat right top #013d7d;
+          background-size: cover;
+
+          .banner-content {
+            padding-top: 0;
+          }
+        }
+
+        &.section-our-doctors {
+          /* IE10+ */
+          background-image: -ms-linear-gradient(top, #FFFFFF 0%, #FFFFFF 466px, #F2F9FF 50%, #f2f9ff 100%);
+          /* Mozilla Firefox */
+          background-image: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 466px, #F2F9FF 50%, #f2f9ff 100%);
+          /* Opera */
+          background-image: -o-linear-gradient(top, #FFFFFF 0%, #FFFFFF 466px, #F2F9FF 50%, #f2f9ff 100%);
+          /* Webkit (Safari/Chrome 10) */
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(466px, #FFFFFF), color-stop(466px, #F2F9FF), color-stop(100, #f2f9ff));
+          /* Webkit (Chrome 11+) */
+          background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 466px, #F2F9FF 466px, #f2f9ff 100%);
+          /* W3C Markup */
+          background-image: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 466px, #F2F9FF 466px, #f2f9ff 100%);
+          }
+      }
+
+      &.section-our-doctors {
+        .int {
+          background: url(../../assets/images/bg-our-doctors.jpg) no-repeat right bottom;
+          padding: 0 0 300px 0;
+        }
+
+        h2 {
+          text-align: center;
+          font-size: 32px;
+          color: $primary-color;
+          margin-bottom: 40px;
+        }
+
+        > .int > .container > .row {
+          padding:70px 0;
+
+          > .col-md-12 {
+            > p {
+              text-align: center;
+              margin-bottom: 20px;
+              font-size: 16px;
+
+              &:nth-child(1) {
+                font-weight: 200;
+              }
+
+              &:nth-child(2) {
+                font-weight: 200;
+              }
+
+              &:nth-child(3) {
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+
+      @media all and (min-width: 1px) {
+        &.banner {
+          &.our-doctors-banner {
+            background: #013d7d;
+            min-height: auto;
+
+            .banner-txt {
+              text-align: center;
+
+              ul {
+                margin: 0 auto 0 auto;
+                display: table;
+              }
+
+              h2 {
+                padding-top: 20px;
+              }
+            }
+          }
+        }
+
+        &.section-our-doctors {
+          > .int > .container > .row {
+            padding: 0;
+
+            &:nth-child(1) {
+              padding: 93px 0;
+            }
+          }
+        }
+      }
+
+      @media all and (min-width: 992px) {
+        &.banner {
+          &.our-doctors-banner {
+            background: url(../../assets/images/our-doctors-banner-bg.jpg) no-repeat right top #013d7d;
+            background-size: cover;
+            min-height: 600px;
+
+            .banner-txt {
+              text-align: left;
+              padding: 150px 0 0 50px;
+
+              p {
+                margin: 0 0 80px 0;
+              }
+
+              h2 {
+                padding-top: 0;
+              }
+            }
+          }
+        }
+
+        &.section-our-doctors {
+          > .int > .container > div > .row {
+            padding: 70px 0;
+
+            &:nth-child(1) {
+              padding: 70px 0;
+            }
+          }
+        }
+      }
+
+      @media all and (min-width: 1400px) {
+        &.banner.our-doctors-banner {
+          background-size: contain;
+        }
+      }
+    }
+  }
+}

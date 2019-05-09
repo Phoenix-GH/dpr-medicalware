@@ -1,0 +1,54 @@
+@import '../../../../style/app.scss';
+@import '../../../../style/mixins.scss';
+
+.location-item {
+  padding: 0 0 100px 0;
+  position: relative;
+
+  &.odd {
+    background: #FFF;
+    padding: 100px 0 280px 0;
+
+    .map-section {
+      position: relative;
+    }
+
+    @media (max-width: 992px) {
+      padding-top: 0px;
+    }
+  }
+
+  &.even {
+    background: $light-color4;
+
+    .location-map-outer {
+      .map-section {
+        margin-top: -180px;
+        position: relative;
+      }
+    }
+  }
+
+  &.first-location-item {
+    background: #FFF;
+    padding:0 0 280px 0;
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 550px;
+  }
+
+  .map-section {
+    width: 100%;
+    min-height: 550px;
+  }
+
+  &.last-location-item {
+    padding: 100px 0 100px 0;
+
+    @media (max-width: 992px) {
+      padding-top: 0px;
+    }
+  }
+}

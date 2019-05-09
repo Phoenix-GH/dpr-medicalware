@@ -1,0 +1,61 @@
+@import '../../../../style/app.scss';
+@import '../../../../style/mixins.scss';
+
+.white-box {
+  height: 560px;
+  padding: 60px 80px;
+
+  @media (min-width: 1px) {
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    height: auto;
+    background: #FFF;
+  }
+
+  @media (min-width: 730px) {
+    padding: 60px 80px;
+  }
+
+  @media (min-width: 992px) {
+    height: 560px;
+  }
+
+  h3 {
+    color: $secondary-color;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 30px;
+
+    strong {
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    // margin-left: -40px;
+    max-width: 340px;
+
+    > li {
+      counter-increment: customlistcounter;
+      font-size: 16px;
+      margin-bottom: 20px;
+
+      &:before {
+        content: counter(customlistcounter) " ";
+        font-weight: bold;
+        float: left;
+        width: 40px;
+        color: #7c7c7c;
+        font-size: 20px;
+        margin-top: -4px;
+      }
+    }
+
+    &:first-child {
+      counter-reset: customlistcounter;
+    }
+  }
+}

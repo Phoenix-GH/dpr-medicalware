@@ -1,0 +1,139 @@
+.cw-contact-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .cw-contact-menu {
+
+    @media (max-width: 992px) {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        padding: 0 12px;
+        line-height: 60px;
+
+        a {
+          padding-bottom: 12px;
+
+          @media (min-width: 1px) {
+            font-size: 18px;
+          }
+
+          @media (min-width: 992px) {
+            font-size: 12px;
+          }
+
+          @media (min-width: 1250px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .sub-menu {
+      text-align: left;
+
+      li {
+        display: block;
+        padding: 0;
+      }
+    }
+  }
+
+  .cw-top-white-box {
+    display: flex;
+    justify-content: flex-start;
+    height: 58px;
+    margin-bottom: 10px;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+
+    ul {
+      padding: 0 5px;
+
+      @media (min-width: 992px) {
+        margin: 0 0 10px 0;
+     }
+
+      @media (min-width: 1400px) {
+          margin: 0 0 10px 24px;
+      }
+
+      li {
+        padding: 13px 5px;
+
+        a {
+          color: black;
+
+          @media (min-width: 992px) {
+            font-size: 12px;
+          }
+
+          @media (min-width: 1250px) {
+            font-size: 13px;
+          }
+
+          .fa-phone {
+            color: #076fde;
+            font-size: 14px;
+            margin: 0 10px 0 22px;
+          }
+        }
+      }
+    }
+
+    -webkit-clip-path: polygon(0 0, 95% 0, 100% 80%, 5% 100%);
+    clip-path: polygon(0 0, 95% 0, 100% 80%, 5% 100%);
+    background: #FFF;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+  }
+
+  .cw-login-mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 100px;
+    font-size: 18px;
+    background: #05203d;
+
+    .fa-phone {
+      color: #076fde;
+      padding-right: 15px;
+    }
+
+    .cw-login-button {
+      height: 60px;
+      width: 180px;
+      background-color: #066ede;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}

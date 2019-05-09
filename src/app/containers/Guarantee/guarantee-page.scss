@@ -1,0 +1,225 @@
+@import '../../style/app.scss';
+@import '../../style/mixins.scss';
+
+.cw-guaranteePage {
+  .page-outer {
+    overflow: hidden;
+    width: 100%;
+
+    section {
+      &.banner {
+        &.guarantee-banner {
+          min-height: 600px;
+          background: url(../../assets/images/guarantee-banner-bg.jpg) no-repeat right top #013d7d;
+
+          .banner-txt2 {
+            ul {
+              margin-left: 80px;
+              padding: 20px 0;
+
+              li strong {
+                max-width: 320px;
+              }
+            }
+
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      &.promise {
+        .guarantee100 {
+          position: absolute;
+          right: 0;
+          bottom: -250px;
+        }
+
+        .promise-outer {
+          background: url(../../assets/images/promise-bg.jpg) no-repeat left top #FFF;
+          padding: 130px 0 0 0;
+          min-height: 652px;
+        }
+
+        h2 {
+          text-align: center;
+          font-size: 32px;
+          color: $primary-color;
+          margin-bottom: 40px;
+        }
+
+        span.subtitle {
+          font-size: 18px;
+          text-align: center;
+          display: block;
+          margin-bottom: 40px;
+        }
+
+        ul {
+          display: table;
+          margin: 0 auto 40px auto;
+
+          li {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 5px;
+
+            span {
+              text-align: left;
+              margin-right: 20px;
+            }
+          }
+        }
+
+        a.button2 {
+          margin: 0 auto;
+        }
+      }
+
+      &.how-guarantee-works {
+        .hgw-outer {
+          background: $light-color;
+          padding: 130px 0 100px 0;
+        }
+
+        h2 {
+          text-align: center;
+          font-size: 32px;
+          color: $primary-color;
+          margin-bottom: 40px;
+        }
+      }
+
+      &.refund-process {
+        margin-top: -100px;
+
+        .rp-outer {
+          background: url(../../assets/images/refund-process-bg.jpg) no-repeat right top #FFF;
+          padding: 130px 0 275px 0;
+        }
+
+        h2 {
+          text-align: center;
+          font-size: 32px;
+          color: $primary-color;
+          margin-bottom: 40px;
+        }
+
+        p {
+          font-size: 16px;
+          text-align: center;
+          display: block;
+          margin-bottom: 90px;
+        }
+      }
+
+      @media all and (min-width: 1px) {
+        &.banner {
+          &.guarantee-banner {
+            min-height: 600px;
+            background: #013d7d;
+
+            .banner-txt2 {
+              p {
+                text-align: center;
+              }
+
+              ul {
+                margin-left: auto;
+                margin: 0 auto;
+                display:table;
+              }
+            }
+          }
+        }
+
+        &.promise {
+          .promise-outer {
+            background: #FFF;
+            padding: 40px 0 0 0;
+          }
+
+          .guarantee100 {
+            position: static;
+            margin: 0 auto;
+            display: table;
+          }
+        }
+
+        &.refund-process {
+          .rp-outer {
+            background: #FFF;
+            padding: 130px 0 275px 0;
+          }
+        }
+      }
+
+      @media all and (min-width: 992px) {
+        &.banner {
+          &.guarantee-banner {
+            .banner-txt2 {
+              ul {
+                margin-left: 80px;
+                display: block;
+
+                li strong {
+                  max-width: 320px;
+                }
+              }
+
+              p {
+                text-align: left;
+              }
+            }
+
+            .banner-content {
+              padding-top: 40px;
+            }
+          }
+        }
+
+        &.promise {
+          .promise-outer {
+            background: url(../../assets/images/promise-bg.jpg) no-repeat left top #FFF;
+            padding: 130px 0 0 0;
+          }
+
+          .guarantee100 {
+            position: absolute;
+            margin: 0;
+          }
+        }
+
+        &.refund-process {
+          .rp-outer {
+            background: url(../../assets/images/refund-process-bg.jpg) no-repeat right top #FFF;
+            padding: 130px 0 275px 0;
+          }
+        }
+      }
+
+      @media all and (min-width: 1200px) {
+        &.banner {
+          &.guarantee-banner {
+            min-height: 600px;
+            background: url(../../assets/images/guarantee-banner-bg.jpg) no-repeat right top #013d7d;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 1px) {
+    .page-guarantee section.call-out2 .bluebox2 p {
+      line-height:18px;
+    }
+  }
+
+  @media all and (min-width: 992px) {
+    .page-guarantee section.call-out2 .bluebox2 p {
+      line-height:30px;
+    }
+  }
+}

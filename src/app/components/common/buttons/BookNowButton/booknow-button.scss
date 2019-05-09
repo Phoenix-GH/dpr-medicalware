@@ -1,0 +1,93 @@
+.cw-enrollnow-btn {
+  display: block;
+  background: white;
+  height: 84px;
+  width: 440px;
+  border-radius: 7px;
+
+  @media (min-width: 1px) {
+    width: 275px;
+  }
+
+  @media all and (min-width: 400px) {
+    width: 374px;
+  }
+
+  @media all and (min-width: 1200px) {
+    width: 440px;
+  }
+
+  .bx1 {
+    background: linear-gradient(to top, #076fde 0%, #4b93e0 100%);
+    border-radius: 7px;
+    height: 84px;
+    width: 330px;
+    display: block;
+    float: left;
+
+    @media (min-width: 1px) {
+      width: 175px;
+      height: 84px;
+    }
+
+    @media all and (min-width: 400px) {
+      width: 270px;
+    }
+
+    @media all and (min-width: 1200px) {
+      width: 330px;
+    }
+  
+    strong {
+      color: white;
+      font-size: 30px;
+      font-weight: 900;
+      display: block;
+      padding: 8px 0 0 0px;
+      text-align: center;
+
+      @media (max-width: 400px) {
+        font-size: 20px;
+      }
+    }
+
+    span {
+      color: white;
+      height: 84px;
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+      text-align: center;
+
+      @media (max-width: 400px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .bx2 {
+    height: 84px;
+    width: 100px;
+    float: left;
+    text-align: center;
+
+    strong {
+      color: black;
+      font-size: 26px;
+      display: block;
+      text-align: center;
+      font-weight: 900;
+    }
+
+    span {
+      color: black;
+      font-size: 14px;
+      display: block;
+      text-align: center;
+      width: 80px;
+      margin: 0 auto;
+      line-height: 16px;
+      padding: 10px 0 0 0;
+    }
+  }
+}

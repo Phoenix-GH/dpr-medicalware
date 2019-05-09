@@ -1,0 +1,183 @@
+@import '../../style/app.scss';
+@import '../../style/mixins.scss';
+
+.cw-hippa-privacy-page {
+  .page-outer {
+    section {
+      &.hippa-privacy-notice {
+        padding: 80px 0 300px 0;
+
+        h2 {
+          font-size: 32px;
+          text-align: center;
+          color: $primary-color;
+          margin-bottom:50px;
+        }
+
+        h3 {
+          font-size: 24px;
+          color: $secondary-color;
+          margin-bottom: 20px;
+          cursor: pointer;
+          display: table;
+        }
+
+        p {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+
+        ul {
+          margin-bottom: 40px;
+
+          li {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+
+          &.list-1 {
+            list-style-type: disc;
+          }
+        }
+
+        .ui-accordion-content {
+          margin-bottom: 20px;
+        }
+
+        .ui-accordion-header-icon {
+          display: table;
+          float: right;
+          padding-right: 40px;
+          padding-left: 20px;
+          line-height: 36px;
+
+          &:before {
+            font-family: 'FontAwesome';
+            color: $secondary-color;
+            font-size: 30px;
+            content: "\f107";
+          }
+        }
+
+        .ui-accordion-header-active {
+          .ui-accordion-header-icon {
+            &:before {
+              font-family: 'FontAwesome';
+              color: $secondary-color;
+              font-size: 30px;
+              content: "\f106";
+            }
+          }
+        }
+
+        p {
+          &.b-hippa {
+            color: $primary-color;
+            font-size: 16px;
+            text-align: center;
+
+            strong {
+              font-size:30px;
+            }
+          }
+        }
+      }
+    }
+
+    .ui-accordion {
+      .ui-accordion-content{
+        box-sizing: content-box !important;
+        -moz-box-sizing: content-box !important;
+      }
+    }
+
+    @media all and (min-width: 1px) {
+      section {
+        &.banner {
+          &.hpn-banner {
+            background: #04274d;
+
+            div.col-md-5 > img {
+              margin: 0 auto;
+            }
+          }
+        }
+
+        &.call-out2 {
+          .bluebox2 .container {
+            .col-md-8 {
+              h3 {
+                text-align: center;
+                margin: -30px 0 35px 0;
+              }
+
+              p {
+                text-align: center;
+              }
+            }
+
+            .col-md-4 {
+              img {
+                margin: 20px auto auto auto;
+                display: table;
+                max-width: 280px;
+              }
+            }
+          }
+
+          .button1 {
+            margin: 20px auto 0 auto;
+          }
+        }
+      }
+    }
+
+    @media all and (min-width: 992px) {
+      section {
+        &.banner {
+          &.hpn-banner {
+            background: url(../../assets/images/bg-privacy-policy2.jpg) no-repeat center top;
+
+            div.col-md-5 > img {
+              margin: 0;
+            }
+          }
+        }
+
+        &.call-out2 {
+          .bluebox2 .container {
+            .col-md-8 {
+              h3 {
+                margin: 177px 0 35px 0;
+                text-align: center;
+              }
+
+              p {
+                text-align: center;
+              }
+            }
+
+            .col-md-4 {
+              img {
+                margin: 100px 0 0 0;
+                max-width: none;
+              }
+            }
+          }
+
+          .button1 {
+            margin: 35px auto 0 auto;
+          }
+        }
+      }
+    }
+
+    @media all and (min-width: 1200px) {
+
+    }
+
+    @media all and (min-width: 1400px) {
+
+    }
+  }
+}

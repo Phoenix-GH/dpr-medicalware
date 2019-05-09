@@ -1,0 +1,353 @@
+@import '../../../../style/app.scss';
+@import '../../../../style/mixins.scss';
+
+.banner-txt {
+  h2 {
+    color: $header-homepage-banner-text-color;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  ul {
+    li {
+      clear: both;
+      display: block;
+
+      span {
+        display: block;
+        width: 20px;
+        height: 14px;
+        float: left;
+        background: url(../../../../assets/images/bullet.gif) no-repeat;
+        margin-top: 3px;
+      }
+
+      strong {
+        display: table;
+        float: left;
+        margin-left: 20px;
+        font-weight: normal;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &.pricing {
+    ul {
+      li {
+        strong {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &.faq {
+    p {
+      font-size: 18px;
+    }
+    
+    ul {
+      li {
+        strong {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &.guarantee {
+    p {
+      font-size: 18px;
+    }
+
+    ul {
+      li {
+        strong {
+          max-width: 320px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &.doctors {
+    p {
+      font-size: 18px;
+    }
+
+    ul {
+      li {
+        strong {
+          max-width: 320px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 1px) {
+    padding: 0 0 0 0;
+    margin-bottom: 0;
+    min-height: 34px;
+
+    p {
+      text-align: center;
+    }
+    
+    ul {
+      display: table;
+      margin: 0 auto;
+
+      
+      li {
+        min-height: 34px;
+        margin-bottom: 20px;
+      }
+    }
+
+    h2 {
+      padding-bottom: 30px;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    &.guarantee {
+      p {
+        text-align: center;
+      }
+
+      ul {
+        margin-left: auto;
+        padding: 20px 0;
+        margin: 0 auto;
+        display: table;
+      }
+
+      ul li strong {
+        max-width: 320px;
+      }
+
+      .button1 {
+        margin:0 auto 30px auto;
+        margin-left: auto;
+      }
+    }
+
+    .cw-enrollnow-btn {
+      margin: 30px auto;
+    }
+
+    &.pricing, &.locations {
+      ul {
+        padding: 20px;
+        margin: 13px 0 50px 13px;
+      }
+    }
+
+    &.doctors {
+      margin-bottom:0;
+
+      p {
+        font-size: 18px;
+      }
+
+      ul {
+        margin-left: 80px;
+        padding: 20px 0;
+
+        li strong {
+          max-width: 320px;
+        }
+      }
+
+      h2 {
+        margin-bottom: 40px;
+      }
+    }
+
+    &.aboutus {
+      ul li {
+        height: auto;
+        font-size: 16px;
+        margin-bottom: 10px;
+
+        strong > strong {
+          display: inline;
+          float: none;
+          margin-left: 0;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.privacyPractice, &.hippaPrivacy {
+      h2 {
+        margin-bottom: 40px;
+      }
+      p {
+        margin-bottom: 40px;
+      }
+  
+      ul {
+        margin: 0;
+  
+        li {
+          min-height: 20px;
+          padding:10px 20px;
+          background: -moz-linear-gradient(left, rgba(3, 21, 41,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba(3, 21, 41,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba(3, 21, 41,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          margin-bottom: 10px;
+
+          strong {
+            max-width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 307px) {
+    ul li strong {
+        max-width: 165px;
+    }
+  }
+
+  @media all and (min-width: 400px) {
+    ul li strong {
+      max-width: 340px;
+    }
+
+    &.aboutus {
+      ul li strong {
+        max-width: 340px;
+      }
+    }
+
+    &.privacyPractice, &.hippaPrivacy {
+      ul li strong {
+        max-width: 370px;
+      }
+    }
+  }
+
+  @media all and (min-width: 992px) {
+    margin-bottom: 75px;
+    padding: 25px 0 0 50px;
+    max-width: auto;
+
+    ul {
+      padding: 20px;
+      margin: 13px 0 0 13px;
+      background: -moz-linear-gradient(left, rgba(3, 21, 41,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+      // background: -webkit-linear-gradient(left, rgba(3, 21, 41,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+      // background: linear-gradient(to right, rgba(3, 21, 41,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+      li {
+        margin-bottom: 25px;
+        min-height: 20px;
+      }
+
+      margin-bottom: 75px;
+    }
+
+    h2 {
+      font-size: 36px;
+      padding-bottom: 0;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .cw-enrollnow-btn.button1 {
+      margin: 0;
+    }
+
+    &.pricing, &.guarantee, &.locations, &.faq, &.doctors, &.aboutus, &.privacyPractice, &.hippaPrivacy {
+      ul {
+        background: transparent;
+      }
+    }
+
+    &.faq {
+      p {
+        text-align: left;
+      }
+    }
+
+    &.pricing {
+      ul {
+        padding: 0;
+      }
+    }
+
+    &.guarantee {
+      p {
+        text-align: left;
+      }
+  
+      ul {
+        margin-left: 80px;
+      }
+
+      .button1 {
+        margin-left:80px;
+      }
+
+      .cw-enrollnow-btn {
+        margin: 75 0 0 40px;
+      }
+    }
+
+    &.locations {
+      ul {
+        margin-bottom: 60px;
+      }
+    }
+
+    .cw-enrollnow-btn {
+      margin: 0 0 0 40px;
+    }
+
+    &.aboutus {
+      margin: 0 0 0 0;
+
+      ul {
+        margin-bottom: 70px;
+      }
+
+      .cw-enrollnow-btn {
+        margin-left: 0px;
+      }
+    }
+
+    &.privacyPractice, &.hippaPrivacy {
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  @media all and (min-width: 1200px) {
+    ul {
+      li {
+        margin-bottom: 25px;
+      }
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media all and (min-width: 1400px) {
+    ul {
+      li {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+  

@@ -1,0 +1,62 @@
+.cw-pricemark {
+  &.price {
+    background: #062659;
+    width: 126px;
+    height: 126px;
+    color: #FFF;
+    border-radius: 10px;
+    padding-top: 18px;
+    line-height: 28px;
+    float: left;
+
+    > strong {
+      font-size: 36px;
+      display: table;
+      text-align: center;
+      margin: 0 auto;
+
+      > span.b1 {
+        display: table;
+        float: left;
+      }
+
+      > span.b2 {
+        font-size: 20px;
+        display: table;
+        float: left;
+        line-height: 16px;
+      }
+    }
+
+    > span {
+      font-size: 18px;
+      display: block;
+      text-align: center;
+      clear: both;
+    }
+  }
+
+  &.time {
+    background: #076fde;
+    width: 126px;
+    height: 126px;
+    color: #FFF;
+    border-radius: 10px;
+    padding-top: 18px;
+    line-height: 28px;
+    float: left;
+    margin-left: 10px;
+
+    > strong {
+      font-size: 36px;
+      display: block;
+      text-align: center;
+    }
+
+    > span {
+      font-size: 18px;
+      display: block;
+      text-align: center;
+    }
+  }
+}

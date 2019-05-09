@@ -1,0 +1,196 @@
+@import '../../style/app.scss';
+@import '../../style/mixins.scss';
+
+.cw-locationsPage {
+  .page-outer {
+    section {
+      &.banner {
+        &.locations-banner {
+          position: relative;
+          height: 550px;
+
+          .map-section {
+            width: 100%;
+            min-height: 550px;
+          }
+
+          .banner-content {
+            padding-top: 0;
+          }
+
+          .banner-top-layer {
+            position: absolute;
+            width: 50%;
+            top: 0;
+            min-height: 550px;
+            background: $transparent-color1;
+
+            .banner-top-layer-inner {
+              display: table;
+              float: right;
+              margin-right: 20%;
+            }
+
+            .banner-top-layer-inner2 {
+              display: block;
+              width: 200px;
+              float: right;
+              background: none;
+              height: 550px;
+              position: absolute;
+              right: -200px;
+
+              .triangle-down-left {
+                width: 0;
+                height: 0;
+                border-width: 550px 0 0 200px;
+                border-color: transparent transparent transparent $transparent-color1;
+                border-style: solid;
+              }
+
+              .triangle-down-left2 {
+                -webkit-clip-path: polygon(0 0, 123px 550px, 100% 100%);
+                clip-path: polygon(0 0, 123px 550px, 100% 100%);
+                background: #2973c1;
+                width: 177px;
+                height: 550px;
+                position: absolute;
+              }
+
+              .triangle-down-left3 {
+                -webkit-clip-path: polygon(0 0, 163px 550px, 100% 100%);
+                clip-path: polygon(0 0, 163px 550px, 100% 100%);
+                background: $primary-color;
+                width: 177px;
+                height: 550px;
+                position: absolute;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media all and (min-width: 1px) {
+      .location-item {
+        .location-details-outer {
+          position: static;
+
+          .location-info-box {
+            .hd h3 {
+              font-size: 18px;
+            }
+
+            .bd ul li p {
+              width: 68%;
+            }
+          }
+        }
+      }
+
+      section.banner.locations-banner {
+        .map-section.main-map {
+          display: none;
+        }
+
+        .banner-top-layer {
+          width: 100%;
+
+          .banner-top-layer-inner {
+            display: table;
+            float: none;
+            margin: 0 auto;
+            padding-top: 30px;
+
+            .banner-txt p {
+              text-align: center;
+            }
+          }
+
+          .banner-top-layer-inner2 {
+            display: none;
+          }
+        }
+      }
+    }
+
+    @media all and (min-width: 490px) {
+      .location-item {
+        .location-details-outer {
+          .location-info-box {
+            .hd h3 {
+              font-size: 24px;
+            }
+
+            .bd ul li p {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+
+    @media all and (min-width: 992px) {
+      .location-item {
+        .location-details-outer {
+          position: absolute;
+        }
+      }
+      section.banner.locations-banner {
+        .map-section.main-map {
+          display: block;
+        }
+
+        .banner-top-layer {
+          width: 50%;
+          height: 550px;
+
+          .banner-top-layer-inner {
+            margin: 0 106px 0 0;
+            display: table;
+            float: right;
+            padding-top: 0;
+
+            .banner-txt p {
+              text-align: left;
+            }
+          }
+
+          .banner-top-layer-inner2 {
+            display: table;
+          }
+        }
+      }
+    }
+    @media all and (min-width: 1200px) {
+      section.banner.locations-banner .banner-top-layer .banner-top-layer-inner {
+        margin: 0 138px 0 0;
+      }
+    }
+    @media all and (min-width: 1400px) {
+      section.banner.locations-banner .banner-top-layer .banner-top-layer-inner {
+        margin: 0 234px 0 0;
+      }
+    }
+  }
+
+  .location-heading {
+    padding: 100px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      color: $primary-color;
+      margin-bottom: 40px;
+    }
+
+    p {
+      &.subtitle {
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
